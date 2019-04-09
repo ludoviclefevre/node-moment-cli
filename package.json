@@ -1,13 +1,13 @@
 {
-  "name": "moment-cli",
+  "name": "moment-utc-cli",
   "version": "0.0.4",
   "description": "CLI for printing dates via momentjs.",
   "bin": {
     "moment": "./bin/moment"
   },
   "dependencies": {
-    "commander": "~1.1.1",
-    "moment": "~2.0.0"
+    "commander": "~2.20.0",
+    "moment": "~2.24.0"
   },
   "devDependencies": {
     "mocha": "*"
@@ -24,5 +24,8 @@
     "cli"
   ],
   "author": "Brian Link <cpsubrian@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "postversion": "git push && git push --tags"
+  }
 }
